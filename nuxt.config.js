@@ -32,7 +32,12 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    // https://color-mode.nuxtjs.org
+    '@nuxtjs/color-mode',
   ],
+  purgeCSS: {
+    whitelist: ['dark-mode'],
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
@@ -45,4 +50,10 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+
+  colorMode: {
+    preference: 'system', // default value of $colorMode.preference
+    fallback: 'light', // fallback value if not system preference found
+    classSuffix: '',
+  },
 }

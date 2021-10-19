@@ -1,39 +1,28 @@
 <template>
-  <header class="my-8 mx-12">
+  <header class="py-8 px-12">
     <nav class="flex justify-between items-center">
       <div>
-        <div class="h-12 w-12 relative flex justify-center items-center">
-          <span class="font-serif text-burgundy text-4xl">J</span>
-          <div
-            class="
-              absolute
-              h-12
-              w-12
-              border border-burgundy
-              transform
-              hover:rotate-90
-              rotate-0
-              transition
-              duration-1000
-            "
-          ></div>
-        </div>
+        <the-logo />
       </div>
 
-      <ul class="flex justify-center items-center">
-        <li class="mx-6 font-serif link">A propos</li>
-        <li class="mx-6 font-serif link">Projets</li>
-        <li class="mx-6 font-serif link">Contact</li>
-        <li class="mx-6">
-          <button
-            class="px-4 py-2 border border-burgundy font-serif text-burgundy"
-          >
-            Mon CV
-          </button>
-        </li>
-      </ul>
+      <div class="hidden sm:flex justify-center items-center">
+        <tertiary-button to="/" text="A propos" class="mx-2 md:mx-6" />
+        <tertiary-button to="/" text="Projets" class="mx-2 md:mx-6" />
+        <tertiary-button to="/" text="Contact" class="mx-2 md:mx-6" />
+        <secondary-button text="Mon CV" class="mx-2 md:mx-6" />
+      </div>
 
-      <div class="border border-burgundy">
+      <!-- Toggle Mode -->
+      <div
+        class="
+          hidden
+          sm:block
+          border border-burgundy
+          dark:border-gold
+          transition-colors
+          duration-300
+        "
+      >
         <button
           class="
             items-center
@@ -57,11 +46,12 @@
               transition
               duration-1000
             "
-            :class="{ '-rotate-45': isDark, 'rotate-0': !isDark }"
+            :class="darkModeClass"
             style="transform-origin: 50% 100px"
           >
+            <!-- :class="{ '-rotate-45': isDark, 'rotate-0': !isDark }" -->
             <svg
-              class="w-full text-burgundy"
+              class="w-full text-burgundy dark:text-gold"
               viewBox="0 0 32 32"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -85,11 +75,12 @@
               transition
               duration-1000
             "
-            :class="{ 'rotate-0': isDark, 'rotate-45': !isDark }"
+            :class="lightModeClass"
             style="transform-origin: 50% 100px"
           >
+            <!-- :class="{ 'rotate-0': isDark, 'rotate-45': !isDark }" -->
             <svg
-              class="w-full text-burgundy"
+              class="w-full text-burgundy dark:text-gold"
               viewBox="0 0 32 32"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -151,23 +142,185 @@
           </span>
         </button>
       </div>
+
+      <!-- Menu Burger -->
+      <div
+        class="
+          block
+          sm:hidden
+          border border-burgundy
+          dark:border-gold
+          transition-colors
+          duration-300
+        "
+      >
+        <button
+          class="
+            items-center
+            justify-center
+            p-1
+            h-9
+            w-9
+            relative
+            overflow-hidden
+          "
+          @click="handleMenuBurger"
+        >
+          <span class="h-9 w-9 absolute inset-0">
+            <svg
+              class="w-full text-burgundy dark:text-gold"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="6"
+                y="9"
+                width="20"
+                height="2"
+                rx="1"
+                fill="currentColor"
+                style="transform: none; transform-origin: 0px 0px 0px"
+                transform-origin="0px 0px"
+              ></rect>
+              <rect
+                x="6"
+                y="15"
+                width="20"
+                height="2"
+                rx="1"
+                fill="currentColor"
+                opacity="1"
+              ></rect>
+              <rect
+                x="6"
+                y="21"
+                width="20"
+                height="2"
+                rx="1"
+                fill="currentColor"
+                style="transform: none; transform-origin: 0px 0px 0px"
+                transform-origin="0px 0px"
+              ></rect>
+            </svg>
+          </span>
+        </button>
+      </div>
+
+      <div
+        class="
+          burger
+          flex flex-col
+          fixed
+          inset-y-0
+          right-0
+          bg-white
+          transition
+          duration-300
+        "
+        :class="{ visible: showSideMenu, invisible: !showSideMenu }"
+        :style="menuBurgerStyle"
+      >
+        <button
+          class="my-8 mx-12 border border-burgundy self-end"
+          @click="handleMenuBurger"
+        >
+          <svg
+            stroke="currentColor"
+            fill="none"
+            stroke-width="0"
+            viewBox="0 0 24 24"
+            class="w-9 h-9 text-burgundy dark:text-gold"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            ></path>
+          </svg>
+        </button>
+
+        <div
+          class="
+            mt-8
+            flex
+            justify-between
+            items-center
+            flex-col
+            text-center
+            w-full
+          "
+        >
+          <tertiary-button to="/" text="A propos" class="my-4" />
+          <tertiary-button to="/" text="Projets" class="my-4" />
+          <tertiary-button to="/" text="Contact" class="my-4" />
+          <secondary-button text="Mon CV" class="my-4" />
+        </div>
+      </div>
     </nav>
   </header>
 </template>
 
 <script>
+import SecondaryButton from './Base/SecondaryButton.vue'
+import TertiaryButton from './Base/TertiaryButton.vue'
+import TheLogo from './TheLogo.vue'
 export default {
   name: 'TheHeader',
+  components: { SecondaryButton, TertiaryButton, TheLogo },
   data() {
     return {
-      isDark: false,
+      // isDark: false,
+      showSideMenu: false,
     }
+  },
+  computed: {
+    darkModeClass() {
+      const darkModeOn = this.$colorMode.value === 'dark'
+      return {
+        '-rotate-45': darkModeOn,
+        'rotate-0': !darkModeOn,
+      }
+    },
+    lightModeClass() {
+      const lightModeOn = this.$colorMode.value === 'light'
+      return {
+        'rotate-45': lightModeOn,
+        'rotate-0': !lightModeOn,
+      }
+    },
+    menuBurgerStyle() {
+      return this.showSideMenu
+        ? 'transform: translateX(0vw)'
+        : 'transform: translateX(100vw)'
+    },
   },
   methods: {
     toggleMode() {
-      this.isDark = !this.isDark
-      window.console.log(this.isDark)
+      this.$colorMode.preference =
+        this.$colorMode.value === 'light' ? 'dark' : 'light'
+    },
+    handleMenuBurger() {
+      window.console.log('clicked')
+      this.showSideMenu = !this.showSideMenu
+      document.querySelector('body').style.overflowY = this.showSideMenu
+        ? 'hidden'
+        : 'scroll'
     },
   },
 }
 </script>
+<style scoped>
+.burger {
+  width: min(75vw, 400px);
+  height: 100vh;
+  outline: currentcolor none 0px;
+  box-shadow: -10px 0px 30px -15px black;
+  transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.blur {
+  filter: blur(5px) brightness(0.7);
+}
+</style>
