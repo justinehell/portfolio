@@ -12,6 +12,7 @@ module.exports = {
       colors: {
         burgundy: '#8D3636',
         gold: '#EFDBB5',
+        black: '#212121',
         gray: '#615D55',
         'light-gray': '#F2F2F2',
         'dark-gray': '#2E2C28',

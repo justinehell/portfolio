@@ -6,7 +6,7 @@
       border border-burgundy
       dark:border-gold
       font-serif
-      text-burgundy
+      text-lg text-burgundy
       dark:text-gold
       transition-colors
       duration-300

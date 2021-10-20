@@ -1,7 +1,14 @@
 <template>
   <NuxtLink
     :to="to"
-    class="font-serif dark:text-white transition-colors duration-300 link"
+    class="
+      font-serif
+      text-lg text-black
+      dark:text-white
+      transition-colors
+      duration-300
+      link
+    "
   >
     {{ text }}
   </NuxtLink>
