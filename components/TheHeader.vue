@@ -38,42 +38,7 @@
           @click="handleSideMenu"
         >
           <span class="h-9 w-9 absolute inset-0">
-            <svg
-              class="w-full text-burgundy dark:text-gold"
-              viewBox="0 0 32 32"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect
-                x="6"
-                y="9"
-                width="20"
-                height="2"
-                rx="1"
-                fill="currentColor"
-                style="transform: none; transform-origin: 0px 0px 0px"
-                transform-origin="0px 0px"
-              ></rect>
-              <rect
-                x="6"
-                y="15"
-                width="20"
-                height="2"
-                rx="1"
-                fill="currentColor"
-                opacity="1"
-              ></rect>
-              <rect
-                x="6"
-                y="21"
-                width="20"
-                height="2"
-                rx="1"
-                fill="currentColor"
-                style="transform: none; transform-origin: 0px 0px 0px"
-                transform-origin="0px 0px"
-              ></rect>
-            </svg>
+            <burger-menu-icon />
           </span>
         </button>
       </div>
@@ -98,21 +63,7 @@
           class="my-8 mx-12 border border-burgundy dark:border-gold self-end"
           @click="handleSideMenu"
         >
-          <svg
-            stroke="currentColor"
-            fill="none"
-            stroke-width="0"
-            viewBox="0 0 24 24"
-            class="w-9 h-9 text-burgundy dark:text-gold"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M6 18L18 6M6 6l12 12"
-            ></path>
-          </svg>
+          <close-icon />
         </button>
 
         <div
@@ -132,6 +83,10 @@
           <secondary-button text="Mon CV" class="my-4" />
         </div>
 
+        <div
+          class="w-9/12 mx-auto mt-6 border-t border-black dark:border-white"
+        ></div>
+
         <dark-mode-button class="self-center mt-8" />
       </div>
     </nav>
@@ -142,11 +97,20 @@
 import SecondaryButton from './Base/SecondaryButton.vue'
 import TertiaryButton from './Base/TertiaryButton.vue'
 import DarkModeButton from './DarkModeButton.vue'
+import CloseIcon from './Icons/Close.vue'
+import BurgerMenuIcon from './Icons/BurgerMenu.vue'
 import TheLogo from './TheLogo.vue'
 
 export default {
   name: 'TheHeader',
-  components: { SecondaryButton, TertiaryButton, TheLogo, DarkModeButton },
+  components: {
+    SecondaryButton,
+    TertiaryButton,
+    TheLogo,
+    DarkModeButton,
+    CloseIcon,
+    BurgerMenuIcon,
+  },
   data() {
     return {
       showSideMenu: false,
