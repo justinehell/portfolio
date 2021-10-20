@@ -4,10 +4,11 @@
       px-4
       py-2
       border border-burgundy
-      dark:border-gold
+      bg-burgundy
+      dark:bg-gold dark:border-gold
       font-serif
-      text-burgundy
-      dark:text-gold
+      text-lg text-white
+      dark:text-black
       transition-colors
       duration-300
     "

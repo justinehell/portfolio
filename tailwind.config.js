@@ -1,6 +1,7 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
+  mode: 'jit',
   purge: [],
   darkMode: 'class', // for toggling dark mode manually  or 'media' for toggling that relies on the operating system preference  or 'false'
   theme: {
@@ -12,6 +13,7 @@ module.exports = {
       colors: {
         burgundy: '#8D3636',
         gold: '#EFDBB5',
+        // gold: '#C0A062',
         black: '#212121',
         gray: '#615D55',
         'light-gray': '#F2F2F2',
