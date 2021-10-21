@@ -1,9 +1,19 @@
 <template>
-  <header class="py-8 px-12">
+  <header
+    class="
+      py-6
+      px-12
+      fixed
+      w-full
+      bg-white-transparent
+      dark:bg-black-transparent
+      top-0
+      z-20
+    "
+    :style="headerStyle"
+  >
     <nav class="flex justify-between items-center">
-      <div>
-        <the-logo />
-      </div>
+      <the-logo />
 
       <div class="hidden sm:flex justify-center items-center">
         <tertiary-button to="/" text="A propos" class="mx-2 md:mx-6" />
@@ -101,6 +111,7 @@ import CloseIcon from './Icons/Close.vue'
 import BurgerMenuIcon from './Icons/BurgerMenu.vue'
 import TheLogo from './TheLogo.vue'
 
+const HEADER_OFFSET = 98
 export default {
   name: 'TheHeader',
   components: {
@@ -114,6 +125,8 @@ export default {
   data() {
     return {
       showSideMenu: false,
+      showNavbar: true,
+      lastScrollPosition: 0,
     }
   },
   computed: {
@@ -124,9 +137,26 @@ export default {
             ? 'rgba(0, 0, 0, 0.4)'
             : 'rgba(255, 255, 255, 0.4)'
         }`,
-        transform: this.showSideMenu ? 'translateX(0vw)' : 'translateX(110vw)',
+        transform: this.showSideMenu ? 'translateX(0vw)' : 'translateX(101vw)',
       }
     },
+    headerStyle() {
+      return {
+        transform: !this.showNavbar
+          ? 'translate3d(0, -110%, 0)'
+          : 'translate3d(0, 0, 0)',
+        borderBottom: '1px solid rgba(0, 0, 0, 0.1)',
+        transition: '0.2s all ease-out',
+      }
+    },
+  },
+  mounted() {
+    this.lastScrollPosition = window.pageYOffset
+    window.addEventListener('scroll', this.onScroll)
+  },
+
+  beforeDestroy() {
+    window.removeEventListener('scroll', this.onScroll)
   },
   methods: {
     handleSideMenu() {
@@ -134,6 +164,18 @@ export default {
       document.querySelector('body').style.overflowY = this.showSideMenu
         ? 'hidden'
         : 'scroll'
+    },
+    onScroll() {
+      if (window.pageYOffset < 0) {
+        return
+      }
+      if (
+        Math.abs(window.pageYOffset - this.lastScrollPosition) < HEADER_OFFSET
+      ) {
+        return
+      }
+      this.showNavbar = window.pageYOffset < this.lastScrollPosition
+      this.lastScrollPosition = window.pageYOffset
     },
   },
 }
