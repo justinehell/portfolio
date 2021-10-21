@@ -9,12 +9,18 @@ module.exports = {
       sans: ['Poppins', ...defaultTheme.fontFamily.sans],
       serif: ['Yeseva One', ...defaultTheme.fontFamily.serif],
     },
+    screens: {
+      ...defaultTheme.screens,
+      md: '875px',
+    },
     extend: {
       colors: {
         burgundy: '#8D3636',
         gold: '#EFDBB5',
         // gold: '#C0A062',
         black: '#212121',
+        'black-transparent': 'rgba(33,33,33,0.90)',
+        'white-transparent': 'rgba(255,255,255,0.96)',
         gray: '#615D55',
         'light-gray': '#F2F2F2',
         'dark-gray': '#2E2C28',

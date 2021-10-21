@@ -1,5 +1,5 @@
 <template>
-  <section class="mt-28 p-7 md:p-4">
+  <section class="flex flex-col justify-center" style="min-height: 100vh">
     <p class="text-burgundy dark:text-gold font-serif text-lg md:text-xl py-4">
       Salut, moi c'est
     </p>

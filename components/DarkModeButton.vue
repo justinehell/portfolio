@@ -7,12 +7,20 @@
       duration-300
     "
   >
-    <button
-      class="items-center justify-center p-1 h-9 w-9 relative overflow-hidden"
-      @click="toggleMode"
-    >
+    <button class="h-12 w-12 p-1 relative overflow-hidden" @click="toggleMode">
       <span
-        class="h-9 w-9 p-1 absolute inset-0 transform transition duration-1000"
+        class="
+          h-9
+          w-9
+          p-1
+          block
+          m-auto
+          absolute
+          inset-0
+          transform
+          transition
+          duration-1000
+        "
         :class="darkModeClass"
         style="transform-origin: 50% 100px"
       >
@@ -20,7 +28,18 @@
         <moon-icon />
       </span>
       <span
-        class="h-9 w-9 p-1 absolute inset-0 transform transition duration-1000"
+        class="
+          h-9
+          w-9
+          p-1
+          block
+          m-auto
+          absolute
+          inset-0
+          transform
+          transition
+          duration-1000
+        "
         :class="lightModeClass"
         style="transform-origin: 50% 100px"
       >

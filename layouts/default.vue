@@ -1,7 +1,9 @@
 <template>
   <div class="dark:bg-black">
     <the-header />
-    <Nuxt class="max-w-3xl lg:max-w-screen-lg mx-auto" />
+    <main class="mx-12 sm:mx-24">
+      <Nuxt class="max-w-screen-md md:max-w-screen-lg mx-auto" />
+    </main>
 
     <!-- left side Social Bar -->
     <div class="fixed bottom-0 left-10 hidden sm:block">

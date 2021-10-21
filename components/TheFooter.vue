@@ -1,5 +1,5 @@
 <template>
-  <div class="py-2">
+  <footer class="py-2">
     <div class="block sm:hidden">
       <ul class="flex justify-center items-center mb-4">
         <li class="px-3">
@@ -19,7 +19,7 @@
         >Justine Hell</a
       >
     </p>
-  </div>
+  </footer>
 </template>
 <script>
 import GithubIcon from '../components/Icons/Github.vue'
