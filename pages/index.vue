@@ -2,6 +2,7 @@
   <div>
     <HeroBanner />
     <About />
+    <Contact />
   </div>
 </template>
 
