@@ -25,10 +25,18 @@ module.exports = {
         'light-gray': '#F2F2F2',
         'dark-gray': '#2E2C28',
       },
+      zIndex: {
+        '-1': '-1',
+      },
+      saturate: {
+        75: '.75',
+      },
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      inset: ['hover'],
+    },
   },
   plugins: [],
 }

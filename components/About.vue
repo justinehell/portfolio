@@ -1,7 +1,7 @@
 <template>
-  <section class="min-h-screen">
+  <section class="flex flex-col justify-center" style="min-height: 100vh">
     <section-title title="A propos" />
-    <div class="flex flex-col md:flex-row mt-7">
+    <div class="flex flex-col items-start md:flex-row mt-7">
       <div class="md:w-2/3 mr-7">
         <p class="font-sans text-lg text-black dark:text-white mb-4">
           Après un parcours scientifique, j'ai décidé de m'orienter vers un
@@ -34,11 +34,26 @@
         </p>
 
         <ul class="font-sans text-lg text-black dark:text-white mb-4">
-          <li>✔ Écosystème VueJS ( VueX / VueRouter / Vuetify )</li>
-          <li>✔ HTML / CSS ou Javascript (ES6+)</li>
-          <li>✔ Strapi / Sanity (headless CMS)</li>
-          <li>✔ Git / Github</li>
-          <li>✔ Méthodes Agiles / Scrum</li>
+          <li>
+            <span class="text-burgundy dark:text-gold font-semibold">✔</span>
+            Écosystème VueJS ( VueX / VueRouter / Vuetify )
+          </li>
+          <li>
+            <span class="text-burgundy dark:text-gold font-semibold">✔</span>
+            HTML / CSS / Javascript (ES6+)
+          </li>
+          <li>
+            <span class="text-burgundy dark:text-gold font-semibold">✔</span>
+            Strapi / Sanity (headless CMS)
+          </li>
+          <li>
+            <span class="text-burgundy dark:text-gold font-semibold">✔</span>
+            Git / Github
+          </li>
+          <li>
+            <span class="text-burgundy dark:text-gold font-semibold">✔</span>
+            Méthodes Agiles / Scrum
+          </li>
         </ul>
 
         <p class="font-sans text-lg text-black dark:text-white mb-4">
@@ -46,19 +61,49 @@
         </p>
 
         <ul class="font-sans text-lg text-black dark:text-white mb-4">
-          <li>✔ NuxtJS</li>
-          <li>✔ JavaScript Testing Framework - Jest, Cypress</li>
+          <li>
+            <span class="text-burgundy dark:text-gold font-semibold">✔</span>
+            NuxtJS
+          </li>
+          <li>
+            <span class="text-burgundy dark:text-gold font-semibold">✔</span>
+            JavaScript Testing Framework - Jest / Cypress
+          </li>
         </ul>
       </div>
-      <div class="card mt-10 md:mt-0 mx-auto md:mx-0">
+      <div
+        class="
+          relative
+          my-10
+          mx-auto
+          md:mt-0 md:mx-0
+          after:border after:border-burgundy
+          dark:after:border-gold
+          after:w-full after:h-full after:absolute after:top-5 after:left-5
+          hover:after:top-3 hover:after:left-3
+          after:transition-all after:duration-300
+          hover:after:transition-all hover:after:duration-300
+          after:z-1
+        "
+      >
         <img
           src="~/assets/images/b&w.jpg"
-          class="z-0"
+          class="relative"
+          style="z-index: 2"
           alt="Justine Hell - by Joz' ma vie"
         />
         <img
           src="~/assets/images/colored.jpg"
-          class="card-image transition duration-300"
+          class="
+            opacity-0
+            absolute
+            top-0
+            left-0
+            hover:opacity-100 hover:filter hover:saturate-75
+            transition-all
+            duration-300
+          "
+          style="z-index: 2"
           alt="Justine Hell - by Joz' ma vie"
         />
       </div>
@@ -74,20 +119,3 @@ export default {
   },
 }
 </script>
-<style scoped>
-.card {
-  position: relative;
-}
-.card .card-image {
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
-.card:hover .card-image {
-  opacity: 1;
-  transition: all 300ms;
-  filter: saturate(75%);
-}
-</style>

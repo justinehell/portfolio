@@ -1,5 +1,5 @@
 <template>
-  <section class="pb-48">
+  <section class="flex flex-col justify-center" style="min-height: 100vh">
     <section-title title="Contact" class="justify-center" />
     <div class="flex flex-col mt-7">
       <h2
