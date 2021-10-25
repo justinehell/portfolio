@@ -6,27 +6,15 @@
         <p class="font-sans text-lg text-black dark:text-white mb-4">
           Après un parcours scientifique, j'ai décidé de m'orienter vers un
           domaine plus dynamique qui me correspond mieux. De nature
-          <span class="text-burgundy dark:text-gold font-semibold"
-            >curieuse</span
-          >
+          <section-span text="curieuse" />
           et
-          <span class="text-burgundy dark:text-gold font-semibold"
-            >créative</span
-          >, j'ai tout de suite été fascinée par les possibilités qu'offre le
-          Développement Web, notamment
-          <span class="text-burgundy dark:text-gold font-semibold"
-            >Front-End</span
-          >. J'aime le
-          <span class="text-burgundy dark:text-gold font-semibold"
-            >travail d'équipe</span
-          >
+          <section-span text="créative" />, j'ai tout de suite été fascinée par
+          les possibilités qu'offre le Développement Web, notamment
+          <section-span text="Front-End" />. J'aime le
+          <section-span text="travail d'équipe" />
           pour l'échange d'idées mais je sais aussi être
-          <span class="text-burgundy dark:text-gold font-semibold"
-            >autonome</span
-          >.
-          <span class="text-burgundy dark:text-gold font-semibold"
-            >Flexible</span
-          >, je saurai m'adapter et m'intégrer rapidement.
+          <section-span text="automone" />. <section-span text="Flexible" />, je
+          saurai m'adapter et m'intégrer rapidement.
         </p>
 
         <p class="font-sans text-lg text-black dark:text-white mb-4">
@@ -35,23 +23,23 @@
 
         <ul class="font-sans text-lg text-black dark:text-white mb-4">
           <li>
-            <span class="text-burgundy dark:text-gold font-semibold">✔</span>
+            <section-span text="✔" />
             Écosystème VueJS ( VueX / VueRouter / Vuetify )
           </li>
           <li>
-            <span class="text-burgundy dark:text-gold font-semibold">✔</span>
+            <section-span text="✔" />
             HTML / CSS / Javascript (ES6+)
           </li>
           <li>
-            <span class="text-burgundy dark:text-gold font-semibold">✔</span>
+            <section-span text="✔" />
             Strapi / Sanity (headless CMS)
           </li>
           <li>
-            <span class="text-burgundy dark:text-gold font-semibold">✔</span>
+            <section-span text="✔" />
             Git / Github
           </li>
           <li>
-            <span class="text-burgundy dark:text-gold font-semibold">✔</span>
+            <section-span text="✔" />
             Méthodes Agiles / Scrum
           </li>
         </ul>
@@ -62,11 +50,11 @@
 
         <ul class="font-sans text-lg text-black dark:text-white mb-4">
           <li>
-            <span class="text-burgundy dark:text-gold font-semibold">✔</span>
+            <section-span text="✔" />
             NuxtJS
           </li>
           <li>
-            <span class="text-burgundy dark:text-gold font-semibold">✔</span>
+            <section-span text="✔" />
             JavaScript Testing Framework - Jest / Cypress
           </li>
         </ul>
@@ -112,10 +100,12 @@
 </template>
 <script>
 import SectionTitle from './Base/Title.vue'
+import SectionSpan from './Base/Span.vue'
 export default {
   name: 'About',
   components: {
     SectionTitle,
+    SectionSpan,
   },
 }
 </script>
