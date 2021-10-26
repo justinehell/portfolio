@@ -2,10 +2,13 @@
   <div>
     <HeroBanner />
     <About />
+    <Projects />
     <Contact />
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  name: 'Home',
+}
 </script>
