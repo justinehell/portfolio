@@ -2,7 +2,7 @@
   <section class="flex flex-col justify-center" style="min-height: 100vh">
     <section-title title="A propos" />
     <div class="flex flex-col items-start md:flex-row mt-7">
-      <div class="md:w-2/3 mr-7">
+      <div class="md:w-2/3 text-justify md:text-left md:mr-7">
         <p class="font-sans text-lg text-black dark:text-white mb-4">
           Après un parcours scientifique, j'ai décidé de m'orienter vers un
           domaine plus dynamique qui me correspond mieux. De nature
@@ -76,8 +76,7 @@
       >
         <img
           src="~/assets/images/b&w.jpg"
-          class="relative"
-          style="z-index: 2"
+          class="relative z-10"
           alt="Justine Hell - by Joz' ma vie"
         />
         <img
@@ -90,8 +89,8 @@
             hover:opacity-100 hover:filter hover:saturate-75
             transition-all
             duration-300
+            z-10
           "
-          style="z-index: 2"
           alt="Justine Hell - by Joz' ma vie"
         />
       </div>

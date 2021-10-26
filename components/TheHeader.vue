@@ -70,7 +70,7 @@
         :style="sideMenuStyle"
       >
         <button
-          class="my-8 mx-12 border border-burgundy dark:border-gold self-end"
+          class="my-6 mx-12 border border-burgundy dark:border-gold self-end"
           @click="handleSideMenu"
         >
           <close-icon />
@@ -137,7 +137,7 @@ export default {
             ? 'rgba(0, 0, 0, 0.4)'
             : 'rgba(255, 255, 255, 0.4)'
         }`,
-        transform: this.showSideMenu ? 'translateX(0vw)' : 'translateX(101vw)',
+        transform: this.showSideMenu ? 'translateX(0vw)' : 'translateX(110vw)',
       }
     },
     headerStyle() {

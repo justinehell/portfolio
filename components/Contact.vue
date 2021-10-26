@@ -24,6 +24,7 @@
           my-8
           max-w-lg
           mx-auto
+          text-justify
         "
       >
         Actuellement à la recherche de nouvelles opportunités, je suis
