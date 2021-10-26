@@ -1,0 +1,11 @@
+{
+  "id": "news_blog",
+  "type": "solo",
+  "name": "NewsBlog",
+  "description": "Site d'articles d'actualités. J'ai utilisé l'API NewsApi pour récupérer et afficher les articles. Ce projet, à but pédagogique, m'a servi à faire évoluer un site initialement développé en HTML / CSS / JS en ajoutant un bundler d'application Web, puis en utilisant le framework VueJS. J'ai ainsi pu tester l'implémentation de Webpack et de Parcel. L'API utilisée ne me permet pas de mettre en ligne l'application, le résultat est visible en vidéo.",
+  "stack": ["JavaScript", "Webpack", "Parcel", "VueJS"],
+  "links": {
+    "github": "https://github.com/justinehell/newsBlog",
+    "site": null
+  }
+}

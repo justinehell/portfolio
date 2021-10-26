@@ -1,0 +1,11 @@
+{
+  "id": "portfolio_v1",
+  "type": "solo",
+  "name": "Portfolio V1",
+  "description": "Création de mon tout premier site / portfolio pour afficher mes créations artistiques (Octobre 2019) puis mise à jour du site avec l'ajout d'une section sur mes projets réalisés en Développement Web.",
+  "stack": ["HTML", "CSS", "JavaScript"],
+  "links": {
+    "github": "https://github.com/justinehell/mywebsite",
+    "site": "https://www.justinehell.fr"
+  }
+}

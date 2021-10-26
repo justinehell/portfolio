@@ -1,0 +1,11 @@
+{
+  "id": "shake_it",
+  "type": "team",
+  "name": "Shake It",
+  "description": "Second projet au sein de la Wild. Une application pensée 'mobile first' qui affiche des recettes de cocktails en fonction des ingrédients séléctionnés. Il est également possible de sauvegarder des recettes dans la section Favoris et de créer une Shopping list en cliquant sur les ingrédients d'une recette.",
+  "stack": ["ReactJS", "Material UI", "API CocktailDB"],
+  "links": {
+    "github": null,
+    "site": "https://shakeit.netlify.app/"
+  }
+}
