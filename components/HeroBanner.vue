@@ -1,5 +1,5 @@
 <template>
-  <section class="flex flex-col justify-center" style="min-height: 100vh">
+  <section class="flex flex-col justify-center min-h-screen">
     <p class="text-burgundy dark:text-gold font-serif text-lg md:text-xl py-4">
       Salut, moi c'est
     </p>
@@ -46,8 +46,12 @@
       Front-end.
     </p>
     <div class="flex mt-7">
-      <primary-button text="Contact" class="mr-14" />
-      <secondary-button text="Projets" class="" />
+      <primary-button
+        text="Contact"
+        link="mailto:hell.justine@gmail.com"
+        class="mr-14"
+      />
+      <secondary-button text="Projets" link="projects" class="" />
     </div>
   </section>
 </template>

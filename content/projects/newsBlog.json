@@ -6,6 +6,6 @@
   "stack": ["JavaScript", "Webpack", "Parcel", "VueJS"],
   "links": {
     "github": "https://github.com/justinehell/newsBlog",
-    "site": null
+    "site": "/news_blog_presentation.mp4"
   }
 }

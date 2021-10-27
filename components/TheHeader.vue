@@ -16,10 +16,14 @@
       <the-logo />
 
       <div class="hidden sm:flex justify-center items-center">
-        <tertiary-button to="/" text="A propos" class="mx-2 md:mx-6" />
-        <tertiary-button to="/" text="Projets" class="mx-2 md:mx-6" />
-        <tertiary-button to="/" text="Contact" class="mx-2 md:mx-6" />
-        <secondary-button text="Mon CV" class="mx-2 md:mx-6" />
+        <tertiary-button hash="about" text="A propos" class="mx-2 md:mx-6" />
+        <tertiary-button hash="projects" text="Projets" class="mx-2 md:mx-6" />
+        <tertiary-button hash="contact" text="Contact" class="mx-2 md:mx-6" />
+        <secondary-button
+          text="Mon CV"
+          link="/CV_Justine_Hell.pdf"
+          class="mx-2 md:mx-6"
+        />
       </div>
 
       <dark-mode-button class="hidden sm:block" />
@@ -87,10 +91,29 @@
             w-full
           "
         >
-          <tertiary-button to="/" text="A propos" class="my-4" />
-          <tertiary-button to="/" text="Projets" class="my-4" />
-          <tertiary-button to="/" text="Contact" class="my-4" />
-          <secondary-button text="Mon CV" class="my-4" />
+          <tertiary-button
+            hash="about"
+            text="A propos"
+            class="my-4"
+            @close="handleSideMenu"
+          />
+          <tertiary-button
+            hash="projects"
+            text="Projets"
+            class="my-4"
+            @close="handleSideMenu"
+          />
+          <tertiary-button
+            hash="contact"
+            text="Contact"
+            class="my-4"
+            @close="handleSideMenu"
+          />
+          <secondary-button
+            text="Mon CV"
+            link="/CV_Justine_Hell.pdf"
+            class="my-4"
+          />
         </div>
 
         <div
@@ -154,7 +177,6 @@ export default {
     this.lastScrollPosition = window.pageYOffset
     window.addEventListener('scroll', this.onScroll)
   },
-
   beforeDestroy() {
     window.removeEventListener('scroll', this.onScroll)
   },

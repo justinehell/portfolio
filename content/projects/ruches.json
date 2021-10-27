@@ -2,10 +2,10 @@
   "id": "ruches",
   "type": "solo",
   "name": "Les Ruches du Dons",
-  "description": "Refonte du site web d'un particulier via Wordpress. Objectifs : rendre le site responsive et moderniser le design tout en gardant la charte graphique du site actuel. Le client a arrêté son activité fin 2020, le site Wordpress développé n'est plus hébergé.",
+  "description": "Refonte du site web d'un particulier via Wordpress. Objectifs : rendre le site responsive et moderniser le design tout en gardant la charte graphique du site actuel. Le client a arrêté son activité fin 2020, le site Wordpress développé n'est plus hébergé (un screenshot de la page d'acceuil est disponible).",
   "stack": ["WordPress"],
   "links": {
     "github": null,
-    "site": null
+    "site": "/ruches_home_page.png"
   }
 }

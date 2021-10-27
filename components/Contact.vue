@@ -1,5 +1,5 @@
 <template>
-  <section class="flex flex-col justify-center" style="min-height: 100vh">
+  <section id="contact" class="flex flex-col justify-center min-h-screen">
     <section-title title="Contact" class="justify-center" />
     <div class="flex flex-col mt-7">
       <h2
@@ -30,7 +30,11 @@
         Actuellement à la recherche de nouvelles opportunités, je suis
         disponible pour échanger si vous souhaitez plus d’informations.
       </p>
-      <primary-button text="Me contacter" class="self-center" />
+      <primary-button
+        text="Me contacter"
+        link="mailto:hell.justine@gmail.com"
+        class="self-center"
+      />
     </div>
   </section>
 </template>

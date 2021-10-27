@@ -1,6 +1,6 @@
 <template>
   <NuxtLink
-    :to="to"
+    :to="{ path: '/', hash: `#${hash}` }"
     class="
       font-serif
       text-lg text-black
@@ -9,6 +9,7 @@
       duration-300
       link
     "
+    @click.native="$emit('close')"
   >
     {{ text }}
   </NuxtLink>
@@ -22,7 +23,7 @@ export default {
       type: String,
       required: true,
     },
-    to: {
+    hash: {
       type: String,
       required: true,
     },

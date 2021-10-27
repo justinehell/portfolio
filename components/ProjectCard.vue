@@ -34,7 +34,24 @@
             {{ project.name }}
           </h3>
         </div>
+        <a v-if="project.links.site" :href="project.links.site" target="_blank">
+          <img
+            :src="require(`~/assets/images/${project.id}.png`)"
+            class="
+              filter
+              grayscale
+              hover:grayscale-0
+              transition
+              duration-300
+              sm:max-w-md sm:mx-auto
+              lg:max-w-full lg:mx-0
+              z-1
+            "
+            :alt="project.name"
+          />
+        </a>
         <img
+          v-else
           :src="require(`~/assets/images/${project.id}.png`)"
           class="
             filter
@@ -46,7 +63,7 @@
             lg:max-w-full lg:mx-0
             z-1
           "
-          alt="intranet - login page"
+          :alt="project.name"
         />
       </div>
       <div :class="projectContentContainerClass">
@@ -81,56 +98,40 @@
         <p
           class="
             font-sans
-            text-black
+            text-base text-justify text-black
             dark:text-white
             lg:bg-light-gray lg:dark:bg-dark-gray
+            py-3
+            mt-5
+            lg:p-6
             relative
-            my-8
-            text-justify
-            lg:my-0 lg:p-6
             z-10
           "
         >
           {{ project.description }}
         </p>
-        <ul
-          class="flex justify-center mt-3"
-          :class="{
-            'lg:justify-end': position % 2,
-            'lg:justify-start': !(position % 2),
-          }"
-        >
+        <ul :class="projectContentStackListClass">
           <li
             v-for="tech in project.stack"
             :key="tech.id"
-            class="font-sans font-semibold text-lg text-gray px-4 lg:px-0"
-            :class="{ 'lg:pl-6': position % 2, 'lg:pr-6': !(position % 2) }"
+            :class="projectContentStackItemClass"
           >
             {{ tech }}
           </li>
         </ul>
 
-        <div
-          v-if="project.links"
-          class="flex justify-center mt-6"
-          :class="{
-            'lg:justify-end': position % 2,
-            'lg:justify-start': !(position % 2),
-          }"
-        >
+        <div v-if="project.links" :class="projectContentLinksClass">
           <primary-button
             v-if="project.links.site"
             text="Voir site"
-            :class="{
-              'mr-6': !(position % 2),
-            }"
+            :link="project.links.site"
+            :class="projectContentLinkSiteClass"
           />
           <secondary-button
             v-if="project.links.github"
             text="Github"
-            :class="{
-              'ml-6': position % 2,
-            }"
+            :link="project.links.github"
+            :class="projectContentLinkGithubClass"
           />
         </div>
       </div>
@@ -164,18 +165,44 @@ export default {
       }`
     },
     projectImageClass() {
-      return {
-        'lg:row-start-1 lg:row-end-1': true,
-        'lg:col-start-1 lg:col-end-7': this.position % 2,
-        'lg:col-start-7 lg:col-end-13': !(this.position % 2),
-      }
+      return [
+        'lg:row-start-1 lg:row-end-1',
+        this.position % 2
+          ? 'lg:col-start-1 lg:col-end-7'
+          : 'lg:col-start-7 lg:col-end-13',
+      ]
     },
     projectContentContainerClass() {
-      return {
-        'lg:row-start-1 lg:row-end-1': true,
-        'lg:col-start-6 lg:col-end-13 text-right': this.position % 2,
-        'lg:col-start-1 lg:col-end-8 text-left': !(this.position % 2),
-      }
+      return [
+        'lg:row-start-1 lg:row-end-1',
+        this.position % 2
+          ? 'lg:col-start-6 lg:col-end-13 text-right'
+          : 'lg:col-start-1 lg:col-end-8 text-left',
+      ]
+    },
+    projectContentStackListClass() {
+      return [
+        'flex justify-center py-3 lg:pt-3 flex-wrap',
+        this.position % 2 ? 'lg:justify-end' : 'lg:justify-start',
+      ]
+    },
+    projectContentStackItemClass() {
+      return [
+        'font-sans font-semibold text-lg text-gray px-4 lg:px-0',
+        this.position % 2 ? 'lg:pl-6' : 'lg:pr-6',
+      ]
+    },
+    projectContentLinksClass() {
+      return [
+        'flex justify-center py-3 lg:py-0',
+        this.position % 2 ? 'lg:justify-end' : 'lg:justify-start',
+      ]
+    },
+    projectContentLinkSiteClass() {
+      return ['mx-3 lg:mx-0', this.position % 2 ? '' : 'lg:mr-6']
+    },
+    projectContentLinkGithubClass() {
+      return ['mx-3 lg:mx-0', this.position % 2 ? 'lg:ml-6' : '']
     },
   },
 }

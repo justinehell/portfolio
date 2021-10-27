@@ -1,5 +1,7 @@
 <template>
-  <button
+  <a
+    :href="link"
+    target="_blank"
     class="
       px-4
       py-2
@@ -14,7 +16,7 @@
     "
   >
     {{ text }}
-  </button>
+  </a>
 </template>
 
 <script>
@@ -22,6 +24,10 @@ export default {
   name: 'PrimaryButton',
   props: {
     text: {
+      type: String,
+      required: true,
+    },
+    link: {
       type: String,
       required: true,
     },
