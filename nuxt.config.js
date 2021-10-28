@@ -4,14 +4,19 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'portfolio',
+    title: 'Justine Hell - Développeuse Front-End VueJS Junior',
     htmlAttrs: {
       lang: 'fr',
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          "Salut, moi c'est Justine, développeuse front-end VueJS sur la région Lyonnaise. Ceci est mon portfolio mettant en avant les différents projets web, solo ou en équipe, auxquels j'ai participé",
+      },
       { name: 'format-detection', content: 'telephone=no' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
