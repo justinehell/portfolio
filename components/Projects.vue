@@ -1,6 +1,9 @@
 <template>
-  <section class="flex flex-col justify-center" style="min-height: 100vh">
-    <section-title title="Projets" class="mx-auto" />
+  <section
+    id="projects"
+    class="flex flex-col justify-center min-h-screen pt-28"
+  >
+    <h2 class="section-title justify-center">Projets</h2>
     <project-card
       v-for="(project, index) in projects"
       :key="project.id"
@@ -12,13 +15,8 @@
   </section>
 </template>
 <script>
-import SectionTitle from './Base/Title.vue'
-
 export default {
   name: 'Projects',
-  components: {
-    SectionTitle,
-  },
   data() {
     return {
       projects: null,

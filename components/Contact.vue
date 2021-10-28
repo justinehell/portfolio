@@ -1,6 +1,6 @@
 <template>
   <section id="contact" class="flex flex-col justify-center min-h-screen">
-    <section-title title="Contact" class="justify-center" />
+    <h2 class="section-title justify-center">Contact</h2>
     <div class="flex flex-col mt-7">
       <h2
         class="
@@ -40,11 +40,10 @@
 </template>
 <script>
 import PrimaryButton from './Base/PrimaryButton.vue'
-import SectionTitle from './Base/Title.vue'
+
 export default {
   name: 'Contact',
   components: {
-    SectionTitle,
     PrimaryButton,
   },
 }

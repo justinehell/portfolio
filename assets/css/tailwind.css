@@ -9,3 +9,25 @@
 
 /* add main css */
 @import '~assets/css/main';
+
+@layer components {
+  .text-accent {
+    @apply text-burgundy dark:text-gold font-bold;
+  }
+
+  .section-title {
+    @apply font-serif
+    whitespace-nowrap
+    text-burgundy
+    dark:text-gold
+    text-2xl
+    md:text-3xl
+    flex
+    items-center
+    after:bg-burgundy
+    dark:after:bg-gold
+    after:relative after:w-full
+    md:after:w-80
+    after:h-px after:ml-7;
+  }
+}

@@ -1,60 +1,74 @@
 <template>
-  <section class="flex flex-col justify-center" style="min-height: 100vh">
-    <section-title title="A propos" />
+  <section
+    id="about"
+    class="flex flex-col justify-center min-h-screen pt-28 md:pt-0"
+  >
+    <h2 class="section-title">A propos</h2>
     <div class="flex flex-col items-start md:flex-row mt-7">
       <div class="md:w-2/3 text-justify md:text-left md:mr-7">
-        <p class="font-sans text-lg text-black dark:text-white mb-4">
+        <p
+          class="font-sans text-base lg:text-lg text-black dark:text-white mb-4"
+        >
           Après un parcours scientifique, j'ai décidé de m'orienter vers un
           domaine plus dynamique qui me correspond mieux. De nature
-          <section-span text="curieuse" />
+          <span class="text-accent">curieuse</span>
           et
-          <section-span text="créative" />, j'ai tout de suite été fascinée par
-          les possibilités qu'offre le Développement Web, notamment
-          <section-span text="Front-End" />. J'aime le
-          <section-span text="travail d'équipe" />
+          <span class="text-accent">créative</span>, j'ai tout de suite été
+          fascinée par les possibilités qu'offre le Développement Web, notamment
+          <span class="text-accent">Front-End</span>. J'aime le
+          <span class="text-accent">travail d'équipe</span>
           pour l'échange d'idées mais je sais aussi être
-          <section-span text="automone" />. <section-span text="Flexible" />, je
-          saurai m'adapter et m'intégrer rapidement.
+          <span class="text-accent">autonome</span>.
+          <span class="text-accent">Flexible</span>, je saurai m'adapter et
+          m'intégrer rapidement.
         </p>
 
-        <p class="font-sans text-lg text-black dark:text-white mb-4">
+        <p
+          class="font-sans text-base lg:text-lg text-black dark:text-white mb-4"
+        >
           Les technologies avec lesquelles j'ai travaillé :
         </p>
 
-        <ul class="font-sans text-lg text-black dark:text-white mb-4">
+        <ul
+          class="font-sans text-base lg:text-lg text-black dark:text-white mb-4"
+        >
           <li>
-            <section-span text="✔" />
+            <span class="text-accent">✔</span>
             Écosystème VueJS ( VueX / VueRouter / Vuetify )
           </li>
           <li>
-            <section-span text="✔" />
+            <span class="text-accent">✔</span>
             HTML / CSS / Javascript (ES6+)
           </li>
           <li>
-            <section-span text="✔" />
+            <span class="text-accent">✔</span>
             Strapi / Sanity (headless CMS)
           </li>
           <li>
-            <section-span text="✔" />
+            <span class="text-accent">✔</span>
             Git / Github
           </li>
           <li>
-            <section-span text="✔" />
+            <span class="text-accent">✔</span>
             Méthodes Agiles / Scrum
           </li>
         </ul>
 
-        <p class="font-sans text-lg text-black dark:text-white mb-4">
+        <p
+          class="font-sans text-base lg:text-lg text-black dark:text-white mb-4"
+        >
           Je me forme actuellement sur :
         </p>
 
-        <ul class="font-sans text-lg text-black dark:text-white mb-4">
+        <ul
+          class="font-sans text-base lg:text-lg text-black dark:text-white mb-4"
+        >
           <li>
-            <section-span text="✔" />
+            <span class="text-accent">✔</span>
             NuxtJS
           </li>
           <li>
-            <section-span text="✔" />
+            <span class="text-accent">✔</span>
             JavaScript Testing Framework - Jest / Cypress
           </li>
         </ul>
@@ -98,13 +112,7 @@
   </section>
 </template>
 <script>
-import SectionTitle from './Base/Title.vue'
-import SectionSpan from './Base/Span.vue'
 export default {
   name: 'About',
-  components: {
-    SectionTitle,
-    SectionSpan,
-  },
 }
 </script>
