@@ -24,7 +24,7 @@ export default {
   },
   async fetch() {
     this.projects = await this.$content('projects')
-      // .where({ type: 'solo' })
+      .sortBy('startDate', 'desc')
       .fetch()
   },
 }

@@ -1,0 +1,146 @@
+[
+  {
+    "id": "weather_forecast",
+    "type": "solo",
+    "name": "Weather Forecast",
+    "description": "Vous souhaitez connaître les prévisions météo pour la semaine à venir ? J'ai juste la bonne application pour vous ! Créée avec Vue.js et l'API OpenweatherMap, je me suis fixée le challenge d'apprendre les bases du framework et de créer ce site en un weekend (06-07 Déc. 2020). J'ai ensuite ajouté la fonctionnalité de recherche et la possibilité d'enregistrer ses villes en favoris.",
+    "stack": ["VueJS", "Bootstrap"],
+    "startDate": "2020-12-06",
+    "links": {
+      "github": "https://github.com/justinehell/weather-app",
+      "site": "https://justinehell-weather-app.netlify.app"
+    }
+  },
+  {
+    "id": "ghibli_guide",
+    "type": "solo",
+    "name": "Ghibli Guide",
+    "description": "Une application React responsive développée à l'aide de l'API Ghibli pour afficher des informations de base sur les personnages, les films, les lieux, les espèces et leurs relations. Ce projet m'a permis de m'initier et me former sur le framework React en autonomie.",
+    "stack": ["ReactJS", "Styled-components"],
+    "startDate": "2020-04-28",
+    "links": {
+      "github": "https://github.com/justinehell/ghibli-app",
+      "site": "https://justinehell-guibli-guide.netlify.app"
+    }
+  },
+  {
+    "id": "intranet",
+    "type": "team",
+    "name": "Intranet The Nuum Factory",
+    "description": "Développement Front-End d'une plateforme pour les élèves diplômés d'une école. Projet réalisé avec l'aide de deux développeurs freelance (front-end & back-end). Fonctionnalitées développées : gestion de la connexion (inscription, activation du compte, réinitialisation du mot de passe), affichage et édition de données (recherche d'un élève, modification du profil, création d'expériences professionnelles).",
+    "stack": ["VueJS", "Vuetify", "Python (Django) "],
+    "startDate": "2021-07-27",
+    "links": {
+      "github": "https://github.com/justinehell/intranet-alumni",
+      "site": null
+    }
+  },
+  {
+    "id": "la_terre_du_milieu",
+    "type": "team",
+    "name": "La Terre du Milieu",
+    "description": "Création d'un site de chambre d'hôtes en équipe avec un développeur front-end freelance. Travail en méthode Agile, avec un forte demande du client au niveau graphique sur le thème du Seigneur des Anneaux. Possibilité d'administrer certains contenus (Notre Région & Nos offres). Site entièrement disponible en trois langues. ",
+    "stack": ["Gatsby", "Sanity", "Tailwind"],
+    "startDate": "2020-11-14",
+    "links": {
+      "github": null,
+      "site": "https://www.laterredumilieu.com"
+    }
+  },
+  {
+    "id": "news_blog",
+    "type": "solo",
+    "name": "NewsBlog",
+    "description": "Site d'articles d'actualités. J'ai utilisé l'API NewsApi pour récupérer et afficher les articles. Ce projet, à but pédagogique, m'a servi à faire évoluer un site initialement développé en HTML / CSS / JS en ajoutant un bundler d'application Web, puis en utilisant le framework VueJS. J'ai ainsi pu tester l'implémentation de Webpack et de Parcel. L'API utilisée ne me permet pas de mettre en ligne l'application, le résultat est visible en vidéo.",
+    "stack": ["JavaScript", "Webpack", "Parcel", "VueJS"],
+    "startDate": "2021-07-07",
+    "links": {
+      "github": "https://github.com/justinehell/newsBlog",
+      "site": "/news_blog_presentation.mp4"
+    }
+  },
+  {
+    "id": "portfolio_v1",
+    "type": "solo",
+    "name": "Portfolio V1",
+    "description": "Création de mon tout premier site / portfolio pour afficher mes créations artistiques (Octobre 2019) puis mise à jour du site avec l'ajout d'une section sur mes projets réalisés en Développement Web.",
+    "stack": ["HTML", "CSS", "JavaScript"],
+    "startDate": "2019-10-01",
+    "links": {
+      "github": "https://github.com/justinehell/mywebsite",
+      "site": "https://www.justinehell.fr"
+    }
+  },
+  {
+    "id": "portfolio_v2",
+    "type": "solo",
+    "name": "Portfolio V2",
+    "description": "Développement d'un portfolio tout neuf qui me correspond mieux. Ce projet m'a également permis de m'initier à NuxtJS.",
+    "stack": ["NuxtJS", "Tailwind"],
+    "startDate": "2021-10-18",
+    "links": {
+      "github": "https://github.com/justinehell/portfolio",
+      "site": null
+    }
+  },
+  {
+    "id": "quiz",
+    "type": "team",
+    "name": "Le Quiz du Grenier",
+    "description": "Premier projet au sein de la Wild. Un site qui permet de tester ses connaissances en rétro-gaming à l'aide d'un quiz, le tout accompagné d'un chronomètre et d'une célèbre musique pour vous mettre dans l'ambiance (NDLR: il est conseillé de baisser votre volume du son avant de démarrer 😉 ).",
+    "stack": ["HTML", "CSS", "JavaScript"],
+    "startDate": "2020-06-02",
+    "links": {
+      "github": null,
+      "site": "https://wildcodeschool.github.io/Lyon-js-202005-project-quizz/"
+    }
+  },
+  {
+    "id": "ruches",
+    "type": "solo",
+    "name": "Les Ruches du Dons",
+    "description": "Refonte du site web d'un particulier via Wordpress. Objectifs : rendre le site responsive et moderniser le design tout en gardant la charte graphique du site actuel. Le client a arrêté son activité fin 2020, le site Wordpress développé n'est plus hébergé (un screenshot de la page d'acceuil est disponible).",
+    "stack": ["WordPress"],
+    "startDate": "2019-12-05",
+    "links": {
+      "github": null,
+      "site": "/ruches_home_page.png"
+    }
+  },
+  {
+    "id": "sens_interdits",
+    "type": "team",
+    "name": "Sens Interdits",
+    "description": "Projet client au sein de la Wild en collaboration avec l'association Sens Interdits. L'objectif est de développer une nouvelle version de leur site internet, en apportant des améliorations au niveau fonctionnel et graphique. Nous leur avons également mis à disposition un back-office afin de rendre le contenu du site administrable de la manière la plus flexible possible.",
+    "stack": ["Gatsby", "Strapi", "GraphQL"],
+    "startDate": "2020-09-27",
+    "links": {
+      "github": null,
+      "site": "https://www.sensinterdits.org/"
+    }
+  },
+  {
+    "id": "shake_it",
+    "type": "team",
+    "name": "Shake It",
+    "description": "Second projet au sein de la Wild. Une application pensée 'mobile first' qui affiche des recettes de cocktails en fonction des ingrédients séléctionnés. Il est également possible de sauvegarder des recettes dans la section Favoris et de créer une Shopping list en cliquant sur les ingrédients d'une recette.",
+    "stack": ["ReactJS", "Material UI", "API CocktailDB"],
+    "startDate": "2020-07-21",
+    "links": {
+      "github": null,
+      "site": "https://shakeit.netlify.app/"
+    }
+  },
+  {
+    "id": "slick_slices",
+    "type": "solo",
+    "name": "Slick's Slices",
+    "description": "Ce site a été réalisé en suivant le cours 'Master Gatsby' créé par Wes Bos. Mon objectif était de me former sur la création de site statique avec Gatsby, puis utiliser ces nouvelles connaissances pour le projet client Sens Interdits (projet en équipe).",
+    "stack": ["Gatsby", "Sanity"],
+    "startDate": "2020-10-29",
+    "links": {
+      "github": "https://github.com/justinehell/gatsby-sanity-course",
+      "site": "https://slick-slices-course.netlify.app"
+    }
+  }
+]
