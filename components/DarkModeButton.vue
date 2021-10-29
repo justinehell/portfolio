@@ -6,27 +6,22 @@
         :class="darkModeClass"
         style="transform-origin: 50% 100px"
       >
-        <moon-icon />
+        <icon-moon />
       </span>
       <span
         class="icon-container"
         :class="lightModeClass"
         style="transform-origin: 50% 100px"
       >
-        <sun-icon />
+        <icon-sun />
       </span>
     </button>
   </div>
 </template>
 <script>
-import SunIcon from './Icons/Sun.vue'
-import MoonIcon from './Icons/Moon.vue'
 export default {
   name: 'DarkModeButton',
-  components: {
-    SunIcon,
-    MoonIcon,
-  },
+
   computed: {
     darkModeClass() {
       const darkModeOn = this.$colorMode.value === 'dark'

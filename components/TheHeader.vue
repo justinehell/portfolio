@@ -34,7 +34,7 @@
           @click="handleSideMenu"
         >
           <span class="h-9 w-9 absolute inset-0">
-            <burger-menu-icon />
+            <icon-burger-menu />
           </span>
         </button>
       </div>
@@ -49,8 +49,6 @@
 </template>
 
 <script>
-import DarkModeButton from './DarkModeButton.vue'
-import BurgerMenuIcon from './Icons/BurgerMenu.vue'
 import TheLogo from './TheLogo.vue'
 import SideMenu from './SideMenu.vue'
 
@@ -59,8 +57,6 @@ export default {
   name: 'TheHeader',
   components: {
     TheLogo,
-    DarkModeButton,
-    BurgerMenuIcon,
     SideMenu,
   },
   data() {

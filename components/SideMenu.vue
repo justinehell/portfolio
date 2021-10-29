@@ -15,7 +15,7 @@
     :style="sideMenuStyle"
   >
     <button class="my-6 mx-12 border-color--accent self-end" @click="closeMenu">
-      <close-icon />
+      <icon-close />
     </button>
 
     <div
@@ -56,13 +56,11 @@
 
 <script>
 import DarkModeButton from './DarkModeButton.vue'
-import CloseIcon from './Icons/Close.vue'
 
 export default {
   name: 'SideMenu',
   components: {
     DarkModeButton,
-    CloseIcon,
   },
   props: {
     sideMenuStyle: {

@@ -33,6 +33,7 @@ export default {
     // Equivalent to { path: '~/components' }
     '~/components',
     { path: '~/components/Base', extensions: ['vue'] },
+    { path: '~/components/Icons', extensions: ['vue'], prefix: 'icon' },
   ],
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules

@@ -15,13 +15,13 @@
         "
       >
         <li class="py-3">
-          <github-icon />
+          <icon-github />
         </li>
         <li class="py-3">
-          <linked-in-icon />
+          <icon-linked-in />
         </li>
         <li class="py-3 mb-6">
-          <instagram-icon />
+          <icon-instagram />
         </li>
       </ul>
     </div>
@@ -58,15 +58,9 @@
 </template>
 <script>
 import TheFooter from '~/components/TheFooter.vue'
-import GithubIcon from '~/components/Icons/Github.vue'
-import InstagramIcon from '~/components/Icons/Instagram.vue'
-import LinkedInIcon from '~/components/Icons/LinkedIn.vue'
 
 export default {
   components: {
-    GithubIcon,
-    InstagramIcon,
-    LinkedInIcon,
     TheFooter,
   },
 }

@@ -3,13 +3,13 @@
     <div class="block sm:hidden">
       <ul class="flex justify-center items-center mb-4">
         <li class="px-3">
-          <github-icon />
+          <icon-github />
         </li>
         <li class="px-3">
-          <linked-in-icon />
+          <icon-linked-in />
         </li>
         <li class="px-3">
-          <instagram-icon />
+          <icon-instagram />
         </li>
       </ul>
     </div>
@@ -22,12 +22,7 @@
   </footer>
 </template>
 <script>
-import GithubIcon from '../components/Icons/Github.vue'
-import LinkedInIcon from '../components/Icons/LinkedIn.vue'
-import InstagramIcon from '../components/Icons/Instagram.vue'
-
 export default {
   name: 'TheFooter',
-  components: { GithubIcon, LinkedInIcon, InstagramIcon },
 }
 </script>
