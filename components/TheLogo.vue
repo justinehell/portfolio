@@ -1,6 +1,16 @@
 <template>
   <div
-    class="h-9 w-9 sm:h-12 sm:w-12 relative flex justify-center items-center"
+    class="
+      h-9
+      w-9
+      sm:h-12 sm:w-12
+      relative
+      flex
+      justify-center
+      items-center
+      cursor-pointer
+    "
+    @click="scrollToTop"
   >
     <span
       class="
@@ -34,5 +44,13 @@
 <script>
 export default {
   name: 'TheLogo',
+  methods: {
+    scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      })
+    },
+  },
 }
 </script>
