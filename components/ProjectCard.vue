@@ -9,28 +9,10 @@
     >
       <div :class="projectImageClass">
         <div class="block lg:hidden text-center">
-          <p
-            class="
-              text-burgundy
-              dark:text-gold
-              font-serif
-              text-lg
-              md:text-xl
-              pb-3
-            "
-          >
+          <p class="font-serif text-color--accent text-lg md:text-xl pb-3">
             {{ projectType }}
           </p>
-          <h3
-            class="
-              font-sans font-bold
-              text-2xl
-              pb-3
-              uppercase
-              text-black
-              dark:text-white
-            "
-          >
+          <h3 class="font-sans text-color font-bold text-2xl pb-3 uppercase">
             {{ project.name }}
           </h3>
         </div>
@@ -71,8 +53,7 @@
           class="
             hidden
             lg:block
-            text-burgundy
-            dark:text-gold
+            text-color--accent
             font-serif
             text-lg
             md:text-xl
@@ -85,12 +66,12 @@
           class="
             hidden
             lg:block
-            font-sans font-bold
+            font-sans
+            text-color
+            font-bold
             text-2xl
             pb-3
             uppercase
-            text-black
-            dark:text-white
           "
         >
           {{ project.name }}
@@ -98,9 +79,8 @@
         <p
           class="
             font-sans
-            text-base text-justify text-black
-            dark:text-white
-            lg:bg-light-gray lg:dark:bg-dark-gray
+            text-color text-base text-justify
+            bg-color--gray
             py-3
             mt-5
             lg:p-6

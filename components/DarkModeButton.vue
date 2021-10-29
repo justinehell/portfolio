@@ -1,49 +1,18 @@
 <template>
-  <div
-    class="
-      border border-burgundy
-      dark:border-gold
-      transition-colors
-      duration-300
-    "
-  >
+  <div class="border-color--accent transition-colors duration-300">
     <button class="h-12 w-12 p-1 relative overflow-hidden" @click="toggleMode">
       <span
-        class="
-          h-9
-          w-9
-          p-1
-          block
-          m-auto
-          absolute
-          inset-0
-          transform
-          transition
-          duration-1000
-        "
+        class="icon-container"
         :class="darkModeClass"
         style="transform-origin: 50% 100px"
       >
-        <!-- :class="{ '-rotate-45': isDark, 'rotate-0': !isDark }" -->
         <moon-icon />
       </span>
       <span
-        class="
-          h-9
-          w-9
-          p-1
-          block
-          m-auto
-          absolute
-          inset-0
-          transform
-          transition
-          duration-1000
-        "
+        class="icon-container"
         :class="lightModeClass"
         style="transform-origin: 50% 100px"
       >
-        <!-- :class="{ 'rotate-0': isDark, 'rotate-45': !isDark }" -->
         <sun-icon />
       </span>
     </button>

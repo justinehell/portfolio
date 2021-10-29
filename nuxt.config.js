@@ -15,7 +15,7 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          "Salut, moi c'est Justine, développeuse front-end VueJS sur la région Lyonnaise. Ceci est mon portfolio mettant en avant les différents projets web, solo ou en équipe, auxquels j'ai participé",
+          "Salut, moi c'est Justine, développeuse VueJS sur la région Lyonnaise. Ceci est mon portfolio mettant en avant les différents projets web, solo ou en équipe, auxquels j'ai participé",
       },
       { name: 'format-detection', content: 'telephone=no' },
     ],

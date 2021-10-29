@@ -3,72 +3,65 @@
     id="about"
     class="flex flex-col justify-center min-h-screen pt-28 md:pt-0"
   >
-    <h2 class="section-title">A propos</h2>
+    <h2 class="section-title text-color--accent after-bg-color--accent">
+      A propos
+    </h2>
     <div class="flex flex-col items-start md:flex-row mt-7">
       <div class="md:w-2/3 text-justify md:text-left md:mr-7">
-        <p
-          class="font-sans text-base lg:text-lg text-black dark:text-white mb-4"
-        >
+        <p class="font-sans text-color text-base lg:text-lg mb-4">
           Après un parcours scientifique, j'ai décidé de m'orienter vers un
           domaine plus dynamique qui me correspond mieux. De nature
-          <span class="text-accent">curieuse</span>
+          <span class="text-color--accent font-bold">curieuse</span>
           et
-          <span class="text-accent">créative</span>, j'ai tout de suite été
-          fascinée par les possibilités qu'offre le Développement Web, notamment
-          <span class="text-accent">Front-End</span>. J'aime le
-          <span class="text-accent">travail d'équipe</span>
+          <span class="text-color--accent font-bold">créative</span>, j'ai tout
+          de suite été fascinée par les possibilités qu'offre le Développement
+          Web, notamment
+          <span class="text-color--accent font-bold">Front-End</span>. J'aime le
+          <span class="text-color--accent font-bold">travail d'équipe</span>
           pour l'échange d'idées mais je sais aussi être
-          <span class="text-accent">autonome</span>.
-          <span class="text-accent">Flexible</span>, je saurai m'adapter et
-          m'intégrer rapidement.
+          <span class="text-color--accent font-bold">autonome</span>.
+          <span class="text-color--accent font-bold">Flexible</span>, je saurai
+          m'adapter et m'intégrer rapidement.
         </p>
 
-        <p
-          class="font-sans text-base lg:text-lg text-black dark:text-white mb-4"
-        >
+        <p class="font-sans text-color text-base lg:text-lg mb-4">
           Les technologies avec lesquelles j'ai travaillé :
         </p>
 
-        <ul
-          class="font-sans text-base lg:text-lg text-black dark:text-white mb-4"
-        >
+        <ul class="font-sans text-color text-base lg:text-lg mb-4">
           <li>
-            <span class="text-accent">✔</span>
+            <span class="text-color--accent font-bold">✔</span>
             Écosystème VueJS ( VueX / VueRouter / Vuetify )
           </li>
           <li>
-            <span class="text-accent">✔</span>
+            <span class="text-color--accent font-bold">✔</span>
             HTML / CSS / Javascript (ES6+)
           </li>
           <li>
-            <span class="text-accent">✔</span>
+            <span class="text-color--accent font-bold">✔</span>
             Strapi / Sanity (headless CMS)
           </li>
           <li>
-            <span class="text-accent">✔</span>
+            <span class="text-color--accent font-bold">✔</span>
             Git / Github
           </li>
           <li>
-            <span class="text-accent">✔</span>
+            <span class="text-color--accent font-bold">✔</span>
             Méthodes Agiles / Scrum
           </li>
         </ul>
 
-        <p
-          class="font-sans text-base lg:text-lg text-black dark:text-white mb-4"
-        >
+        <p class="font-sans text-color text-base lg:text-lg mb-4">
           Je me forme actuellement sur :
         </p>
 
-        <ul
-          class="font-sans text-base lg:text-lg text-black dark:text-white mb-4"
-        >
+        <ul class="font-sans text-color text-base lg:text-lg mb-4">
           <li>
-            <span class="text-accent">✔</span>
+            <span class="text-color--accent font-bold">✔</span>
             NuxtJS
           </li>
           <li>
-            <span class="text-accent">✔</span>
+            <span class="text-color--accent font-bold">✔</span>
             JavaScript Testing Framework - Jest / Cypress
           </li>
         </ul>
@@ -79,8 +72,7 @@
           my-10
           mx-auto
           md:mt-0 md:mx-0
-          after:border after:border-burgundy
-          dark:after:border-gold
+          after-border-color--accent
           after:w-full after:h-full after:absolute after:top-5 after:left-5
           hover:after:top-3 hover:after:left-3
           after:transition-all after:duration-300

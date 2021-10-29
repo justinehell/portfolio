@@ -15,8 +15,7 @@
     <span
       class="
         font-serif
-        text-burgundy
-        dark:text-gold
+        text-color--accent
         transition-colors
         duration-300
         text-3xl
@@ -30,8 +29,7 @@
         h-9
         w-9
         sm:h-12 sm:w-12
-        border border-burgundy
-        dark:border-gold
+        border-color--accent
         transform
         hover:rotate-90
         rotate-0

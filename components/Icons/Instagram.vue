@@ -5,7 +5,7 @@
     target="_blank"
   >
     <svg
-      class="w-5 h-5 text-burgundy dark:text-gold"
+      class="w-5 h-5 text-color--accent"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
       fill="none"

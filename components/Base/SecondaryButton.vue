@@ -3,18 +3,16 @@
     v-bind="linkProps"
     :is="'SecondaryButton'"
     class="
-      px-4
-      py-2
-      border border-burgundy
-      dark:border-gold
-      font-serif
-      text-lg text-burgundy
-      dark:text-gold
-      transition-colors
-      duration-300
+      btn
+      after-border-color--accent
+      before-border-color--accent
+      before:z-10
     "
   >
-    <slot>{{ text }}</slot>
+    <span
+      class="font-serif text-color--accent text-lg inline-block relative z-20"
+      >{{ text }}</span
+    >
   </component>
 </template>
 

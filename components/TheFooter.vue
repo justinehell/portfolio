@@ -13,7 +13,7 @@
         </li>
       </ul>
     </div>
-    <p class="text-burgundy dark:text-gold text-center">
+    <p class="text-color--accent text-center">
       Fait avec ❤️ par
       <a href="https://github.com/justinehell" class="link" target="_blank"
         >Justine Hell</a

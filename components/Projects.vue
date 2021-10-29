@@ -3,16 +3,25 @@
     id="projects"
     class="flex flex-col justify-center min-h-screen pt-28"
   >
-    <h2 class="section-title justify-center">Projets</h2>
+    <h2
+      class="
+        section-title
+        text-color--accent
+        after-bg-color--accent
+        justify-center
+      "
+    >
+      Projets
+    </h2>
 
     <div class="mx-auto my-6">
-      <ul class="flex">
+      <ul class="flex flex-wrap">
         <li
           v-for="tab in tabList"
           :key="tab.type"
           class="px-4"
           :class="{
-            ' text-burgundy dark:text-gold': tab.type === activeTab,
+            ' text-color--accent': tab.type === activeTab,
           }"
         >
           <label
@@ -24,11 +33,10 @@
               mb-3
               relative
               font-semibold
-              text-sans text-black
-              dark:text-white
+              text-sans text-color
             "
             :class="{
-              'text-burgundy dark:text-gold after:absolute after:bg-burgundy dark:after:bg-gold after:w-full after:h-0.5 after:-bottom-1.5 after:left-0':
+              'text-color--accent after:absolute after-bg-color--accent after:w-full after:h-0.5 after:-bottom-1.5 after:left-0':
                 tab.type === activeTab,
             }"
             >{{ tab.label }}</label
@@ -64,7 +72,7 @@ export default {
       tabList: [
         { label: 'Tous', type: 'all' },
         { label: 'Personnel', type: 'solo' },
-        { label: 'En équipe', type: 'team' },
+        { label: 'Équipe', type: 'team' },
       ],
       activeTab: 'all',
     }

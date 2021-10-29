@@ -1,6 +1,6 @@
 <template>
   <svg
-    class="w-9 h-9 text-burgundy dark:text-gold"
+    class="w-9 h-9 text-color--accent"
     stroke="currentColor"
     fill="none"
     stroke-width="0"
@@ -17,6 +17,6 @@
 </template>
 <script>
 export default {
-  name: 'GithubIcon',
+  name: 'CloseIcon',
 }
 </script>

@@ -10,6 +10,7 @@ module.exports = {
       serif: ['Yeseva One', ...defaultTheme.fontFamily.serif],
     },
     screens: {
+      xs: '475px',
       ...defaultTheme.screens,
       md: '875px',
     },

@@ -11,23 +11,86 @@
 @import '~assets/css/main';
 
 @layer components {
-  .text-accent {
-    @apply text-burgundy dark:text-gold font-bold;
+  /* COLORS */
+  .text-color {
+    @apply text-black dark:text-white;
   }
 
+  .text-color--reverse {
+    @apply text-white dark:text-black;
+  }
+
+  .text-color--accent {
+    @apply text-burgundy dark:text-gold;
+  }
+
+  .bg-color {
+    @apply bg-white dark:bg-black;
+  }
+
+  .bg-color--transparent {
+    @apply bg-white-transparent dark:bg-black-transparent;
+  }
+
+  .bg-color--gray {
+    @apply lg:bg-light-gray lg:dark:bg-dark-gray;
+  }
+
+  .border-color--accent {
+    @apply border border-burgundy dark:border-gold;
+  }
+
+  .after-border-color--accent {
+    @apply after:border after:border-burgundy dark:after:border-gold;
+  }
+
+  .after-bg-color--accent {
+    @apply after:bg-burgundy dark:after:bg-gold;
+  }
+
+  .before-border-color--accent {
+    @apply before:border before:border-burgundy dark:before:border-gold;
+  }
+
+  .before-bg-color--accent {
+    @apply before:bg-burgundy dark:before:bg-gold;
+  }
+
+  /* H2 TITLE */
   .section-title {
     @apply font-serif
     whitespace-nowrap
-    text-burgundy
-    dark:text-gold
     text-2xl
     md:text-3xl
     flex
     items-center
-    after:bg-burgundy
-    dark:after:bg-gold
     after:relative after:w-full
     md:after:w-80
     after:h-px after:ml-7;
+  }
+
+  /* BUTTON */
+  .btn {
+    @apply px-6 py-4 relative 
+    before:w-full before:h-full before:absolute before:inset-0 before:transition-transform 
+    after:absolute after:w-full after:h-full after:inset-0;
+  }
+
+  .btn:hover:before {
+    transform: scale3d(0.9, 0.8, 0.8);
+  }
+
+  /* ICON */
+  .icon-container {
+    @apply h-9
+    w-9
+    p-1
+    block
+    m-auto
+    absolute
+    inset-0
+    transform
+    transition
+    duration-1000;
   }
 }

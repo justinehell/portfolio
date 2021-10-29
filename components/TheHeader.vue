@@ -1,15 +1,6 @@
 <template>
   <header
-    class="
-      py-6
-      px-12
-      fixed
-      w-full
-      bg-white-transparent
-      dark:bg-black-transparent
-      top-0
-      z-20
-    "
+    class="py-6 px-8 xs:px-12 fixed w-full bg-color--transparent top-0 z-30"
     :style="headerStyle"
   >
     <nav class="flex justify-between items-center">
@@ -29,16 +20,7 @@
       <dark-mode-button class="hidden sm:block" />
 
       <!-- Menu Burger Button -->
-      <div
-        class="
-          block
-          sm:hidden
-          border border-burgundy
-          dark:border-gold
-          transition
-          duration-300
-        "
-      >
+      <div class="block sm:hidden border-color--accent transition duration-300">
         <button
           class="
             items-center
@@ -66,15 +48,15 @@
           fixed
           h-screen
           inset-0
-          bg-white
-          dark:bg-black
+          bg-color
           transition
           duration-300
+          z-30
         "
         :style="sideMenuStyle"
       >
         <button
-          class="my-6 mx-12 border border-burgundy dark:border-gold self-end"
+          class="my-6 mx-12 border-color--accent self-end"
           @click="handleSideMenu"
         >
           <close-icon />

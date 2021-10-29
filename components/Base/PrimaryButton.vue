@@ -2,20 +2,12 @@
   <a
     :href="link"
     target="_blank"
-    class="
-      px-4
-      py-2
-      border border-burgundy
-      bg-burgundy
-      dark:bg-gold dark:border-gold
-      font-serif
-      text-lg text-white
-      dark:text-black
-      transition-colors
-      duration-300
-    "
+    class="btn after-border-color--accent before-bg-color--accent"
   >
-    {{ text }}
+    <span
+      class="font-serif text-color--reverse text-lg inline-block relative"
+      >{{ text }}</span
+    >
   </a>
 </template>
 

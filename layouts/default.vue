@@ -1,7 +1,7 @@
 <template>
-  <div class="dark:bg-black">
+  <div class="bg-color">
     <the-header />
-    <main class="mx-12 sm:mx-24">
+    <main class="mx-8 xs:mx-12 sm:mx-24">
       <Nuxt class="max-w-screen-md md:max-w-screen-lg mx-auto" />
     </main>
 
@@ -9,8 +9,8 @@
     <div class="fixed bottom-0 left-10 hidden sm:block">
       <ul
         class="
-          after:block after:w-px after:bg-burgundy
-          dark:after:bg-gold
+          after:block after:w-px
+          after-bg-color--accent
           after:h-20 after:m-auto
         "
       >
@@ -27,11 +27,11 @@
     </div>
 
     <!-- right side Email -->
-    <div class="fixed bottom-0 right-10 hidden sm:block">
+    <div class="fixed bottom-0 right-10 hidden sm:block w-5">
       <div
         class="
-          after:block after:w-px after:bg-burgundy
-          dark:after:bg-gold
+          after:block after:w-px
+          after-bg-color--accent
           after:h-20 after:m-auto
         "
       >
@@ -40,8 +40,7 @@
           class="
             tracking-widest
             mb-6
-            text-burgundy
-            dark:text-gold
+            text-color--accent
             relative
             bottom-0
             hover:bottom-1
