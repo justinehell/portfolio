@@ -49,8 +49,6 @@
 </template>
 
 <script>
-import SecondaryButton from './Base/SecondaryButton.vue'
-import TertiaryButton from './Base/TertiaryButton.vue'
 import DarkModeButton from './DarkModeButton.vue'
 import BurgerMenuIcon from './Icons/BurgerMenu.vue'
 import TheLogo from './TheLogo.vue'
@@ -60,8 +58,6 @@ const HEADER_OFFSET = 98
 export default {
   name: 'TheHeader',
   components: {
-    SecondaryButton,
-    TertiaryButton,
     TheLogo,
     DarkModeButton,
     BurgerMenuIcon,

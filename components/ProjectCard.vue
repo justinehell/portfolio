@@ -119,15 +119,8 @@
   </article>
 </template>
 <script>
-import PrimaryButton from './Base/PrimaryButton.vue'
-import SecondaryButton from './Base/SecondaryButton.vue'
-
 export default {
   name: 'ProjectCard',
-  components: {
-    PrimaryButton,
-    SecondaryButton,
-  },
   props: {
     project: {
       type: Object,

@@ -38,12 +38,7 @@
   </section>
 </template>
 <script>
-import PrimaryButton from './Base/PrimaryButton.vue'
-
 export default {
   name: 'Contact',
-  components: {
-    PrimaryButton,
-  },
 }
 </script>

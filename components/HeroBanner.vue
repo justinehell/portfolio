@@ -28,10 +28,7 @@
 </template>
 
 <script>
-import PrimaryButton from './Base/PrimaryButton.vue'
-import SecondaryButton from './Base/SecondaryButton.vue'
 export default {
   name: 'HeroBanner',
-  components: { PrimaryButton, SecondaryButton },
 }
 </script>

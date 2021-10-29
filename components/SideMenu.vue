@@ -55,16 +55,12 @@
 </template>
 
 <script>
-import SecondaryButton from './Base/SecondaryButton.vue'
-import TertiaryButton from './Base/TertiaryButton.vue'
 import DarkModeButton from './DarkModeButton.vue'
 import CloseIcon from './Icons/Close.vue'
 
 export default {
   name: 'SideMenu',
   components: {
-    SecondaryButton,
-    TertiaryButton,
     DarkModeButton,
     CloseIcon,
   },
