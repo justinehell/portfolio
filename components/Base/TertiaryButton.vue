@@ -2,7 +2,6 @@
   <NuxtLink
     :to="{ path: '/', hash: `#${hash}` }"
     class="font-serif text-color text-lg transition-colors duration-300 link"
-    @click.native="$emit('close')"
   >
     {{ text }}
   </NuxtLink>
