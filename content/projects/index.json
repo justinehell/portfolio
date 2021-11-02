@@ -27,12 +27,12 @@
     "id": "intranet",
     "type": "team",
     "name": "Intranet The Nuum Factory",
-    "description": "Développement Front-End d'une plateforme pour les élèves diplômés d'une école. Projet réalisé avec l'aide de deux développeurs freelance (front-end & back-end). Fonctionnalitées développées : gestion de la connexion (inscription, activation du compte, réinitialisation du mot de passe), affichage et édition de données (recherche d'un élève, modification du profil, création d'expériences professionnelles).",
+    "description": "Développement Front-End d'une plateforme pour les élèves diplômés d'une école. Projet réalisé avec l'aide de deux développeurs freelance (front-end & back-end). Fonctionnalités développées : gestion de la connexion (inscription, activation du compte, réinitialisation du mot de passe), affichage et édition de données (recherche d'un élève, modification du profil, création d'expériences professionnelles).",
     "stack": ["VueJS", "Vuetify", "Python (Django) "],
     "startDate": "2021-07-27",
     "links": {
       "github": "https://github.com/justinehell/intranet-alumni",
-      "site": null
+      "site": "https://www.youtube.com/watch?v=u7dqhdmYUhA"
     }
   },
   {
