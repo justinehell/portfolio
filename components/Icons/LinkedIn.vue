@@ -1,7 +1,7 @@
 <template>
   <a
     class="relative bottom-0 hover:bottom-1 transition-all duration-300"
-    href="https://linkedin.com/justinehell"
+    href="https://www.linkedin.com/in/justinehell/"
     target="_blank"
   >
     <svg
