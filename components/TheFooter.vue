@@ -1,17 +1,7 @@
 <template>
   <footer class="py-2">
     <div class="block sm:hidden">
-      <ul class="flex justify-center items-center mb-4">
-        <li class="px-3">
-          <icon-github />
-        </li>
-        <li class="px-3">
-          <icon-linked-in />
-        </li>
-        <li class="px-3">
-          <icon-codepen />
-        </li>
-      </ul>
+      <social-links horizontal />
     </div>
     <p class="text-color--accent text-center">
       Fait avec ❤️ par
@@ -22,7 +12,9 @@
   </footer>
 </template>
 <script>
+import SocialLinks from './Navigation/SocialLinks.vue'
 export default {
   name: 'TheFooter',
+  components: { SocialLinks },
 }
 </script>

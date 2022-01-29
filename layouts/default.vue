@@ -5,28 +5,12 @@
       <Nuxt class="max-w-screen-md md:max-w-screen-lg mx-auto" />
     </main>
 
-    <!-- left side Social Bar -->
+    <!-- left side vertical Social Bar -->
     <div class="fixed bottom-0 left-10 hidden sm:block">
-      <ul
-        class="
-          after:block after:w-px
-          after-bg-color--accent
-          after:h-20 after:m-auto
-        "
-      >
-        <li class="py-3">
-          <icon-github />
-        </li>
-        <li class="py-3">
-          <icon-linked-in />
-        </li>
-        <li class="py-3 mb-6">
-          <icon-codepen />
-        </li>
-      </ul>
+      <SocialLinks />
     </div>
 
-    <!-- right side Email -->
+    <!-- right side vertical Email -->
     <div class="fixed bottom-0 right-10 hidden sm:block w-5">
       <div
         class="
@@ -58,10 +42,12 @@
 </template>
 <script>
 import TheFooter from '~/components/TheFooter.vue'
+import SocialLinks from '~/components/Navigation/SocialLinks.vue'
 
 export default {
   components: {
     TheFooter,
+    SocialLinks,
   },
 }
 </script>
