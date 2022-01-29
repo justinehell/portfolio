@@ -21,7 +21,7 @@
           <icon-linked-in />
         </li>
         <li class="py-3 mb-6">
-          <icon-instagram />
+          <icon-codepen />
         </li>
       </ul>
     </div>

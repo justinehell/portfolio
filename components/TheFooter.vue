@@ -9,7 +9,7 @@
           <icon-linked-in />
         </li>
         <li class="px-3">
-          <icon-instagram />
+          <icon-codepen />
         </li>
       </ul>
     </div>

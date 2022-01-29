@@ -29,25 +29,11 @@
         </p>
 
         <ul class="font-sans text-color text-base lg:text-lg mb-4">
-          <li>
-            <span class="text-color--accent font-bold">✔</span>
-            Écosystème VueJS ( VueX / VueRouter / Vuetify )
-          </li>
-          <li>
-            <span class="text-color--accent font-bold">✔</span>
-            HTML / CSS / Javascript (ES6+)
-          </li>
-          <li>
-            <span class="text-color--accent font-bold">✔</span>
-            Strapi / Sanity (headless CMS)
-          </li>
-          <li>
-            <span class="text-color--accent font-bold">✔</span>
-            Git / Github
-          </li>
-          <li>
-            <span class="text-color--accent font-bold">✔</span>
-            Méthodes Agiles / Scrum
+          <li v-for="(skill, i) in skills" :key="i">
+            <span class="text-color--accent font-bold">
+              <icon-check />
+            </span>
+            {{ skill }}
           </li>
         </ul>
 
@@ -56,13 +42,11 @@
         </p>
 
         <ul class="font-sans text-color text-base lg:text-lg mb-4">
-          <li>
-            <span class="text-color--accent font-bold">✔</span>
-            NuxtJS
-          </li>
-          <li>
-            <span class="text-color--accent font-bold">✔</span>
-            JavaScript Testing Framework - Jest / Cypress
+          <li v-for="(learningSkill, i) in learningSkills" :key="i">
+            <span class="text-color--accent font-bold">
+              <icon-check />
+            </span>
+            {{ learningSkill }}
           </li>
         </ul>
       </div>
@@ -106,5 +90,20 @@
 <script>
 export default {
   name: 'About',
+  data() {
+    return {
+      skills: [
+        'Écosystème VueJS ( VueX / VueRouter / Vuetify )',
+        'HTML / CSS / Javascript (ES6+)',
+        'Strapi / Sanity (headless CMS)',
+        'Git / Github',
+        'Méthodes Agiles / Scrum',
+      ],
+      learningSkills: [
+        'NuxtJS',
+        'JavaScript Testing Framework - Jest / Cypress',
+      ],
+    }
+  },
 }
 </script>
