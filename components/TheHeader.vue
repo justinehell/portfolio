@@ -6,16 +6,7 @@
     <nav class="flex justify-between items-center">
       <the-logo />
 
-      <div class="hidden sm:flex justify-center items-center">
-        <tertiary-button hash="about" text="A propos" class="mx-2 md:mx-6" />
-        <tertiary-button hash="projects" text="Projets" class="mx-2 md:mx-6" />
-        <tertiary-button hash="contact" text="Contact" class="mx-2 md:mx-6" />
-        <secondary-button
-          text="Mon CV"
-          link="/CV_Justine_Hell.pdf"
-          class="mx-2 md:mx-6"
-        />
-      </div>
+      <nav-links />
 
       <dark-mode-button class="hidden sm:block" />
 
@@ -51,6 +42,7 @@
 <script>
 import TheLogo from './TheLogo.vue'
 import SideMenu from './SideMenu.vue'
+import NavLinks from './Navigation/NavLinks.vue'
 
 const HEADER_OFFSET = 98
 export default {
@@ -58,6 +50,7 @@ export default {
   components: {
     TheLogo,
     SideMenu,
+    NavLinks,
   },
   data() {
     return {

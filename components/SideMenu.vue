@@ -14,37 +14,14 @@
     "
     :style="sideMenuStyle"
   >
-    <button class="my-6 mx-12 border-color--accent self-end" @click="closeMenu">
+    <button
+      class="my-6 mx-12 border-color--accent self-end"
+      @click="closeSideMenu"
+    >
       <icon-close />
     </button>
 
-    <div
-      class="mt-8 flex justify-between items-center flex-col text-center w-full"
-    >
-      <tertiary-button
-        hash="about"
-        text="A propos"
-        class="my-4"
-        @click.native="closeMenu"
-      />
-      <tertiary-button
-        hash="projects"
-        text="Projets"
-        class="my-4"
-        @click.native="closeMenu"
-      />
-      <tertiary-button
-        hash="contact"
-        text="Contact"
-        class="my-4"
-        @click.native="closeMenu"
-      />
-      <secondary-button
-        text="Mon CV"
-        link="/CV_Justine_Hell.pdf"
-        class="my-4"
-      />
-    </div>
+    <nav-links side-menu @click="closeSideMenu" />
 
     <div
       class="w-9/12 mx-auto mt-6 border-t border-black dark:border-white"
@@ -56,11 +33,13 @@
 
 <script>
 import DarkModeButton from './DarkModeButton.vue'
+import NavLinks from './Navigation/NavLinks.vue'
 
 export default {
   name: 'SideMenu',
   components: {
     DarkModeButton,
+    NavLinks,
   },
   props: {
     sideMenuStyle: {
@@ -69,7 +48,7 @@ export default {
     },
   },
   methods: {
-    closeMenu() {
+    closeSideMenu() {
       this.$emit('menu:close')
     },
   },
