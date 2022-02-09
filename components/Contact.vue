@@ -26,10 +26,8 @@
       <p
         class="font-sans text-color text-lg my-8 max-w-lg mx-auto text-justify"
       >
-        Bien que je ne recherche actuellement pas de nouvelle opportunité, ma
-        boîte mail est toujours ouverte. Que vous ayez une question ou que vous
-        vouliez simplement dire bonjour, je ferai de mon mieux pour vous
-        répondre !
+        Actuellement à la recherche de nouvelles opportunités, je suis
+        disponible pour échanger si vous souhaitez plus d’informations.
       </p>
       <primary-button
         text="Me contacter"
