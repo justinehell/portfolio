@@ -93,16 +93,13 @@ export default {
   data() {
     return {
       skills: [
-        'Écosystème VueJS ( VueX / VueRouter / Vuetify )',
+        'Écosystème VueJS ( Vuex / Pinia / VueRouter / Vuetify / Quasar )',
         'HTML / CSS / Javascript (ES6+)',
         'Strapi / Sanity (headless CMS)',
         'Git / Github',
         'Méthodes Agiles / Scrum',
       ],
-      learningSkills: [
-        'NuxtJS',
-        'JavaScript Testing Framework - Jest / Cypress',
-      ],
+      learningSkills: ['JavaScript Testing Framework - Jest / Cypress'],
     }
   },
 }

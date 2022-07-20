@@ -15,12 +15,12 @@
     "id": "ghibli_guide",
     "type": "solo",
     "name": "Ghibli Guide",
-    "description": "Une application React responsive développée à l'aide de l'API Ghibli pour afficher des informations de base sur les personnages, les films, les lieux, les espèces et leurs relations. Ce projet m'a permis de m'initier et me former sur le framework React en autonomie.",
+    "description": "[Temporairement suspendu pour MAJ] Une application React responsive développée à l'aide de l'API Ghibli pour afficher des informations de base sur les personnages, les films, les lieux, les espèces et leurs relations. Ce projet m'a permis de m'initier et me former sur le framework React en autonomie.",
     "stack": ["ReactJS", "Styled-components"],
     "startDate": "2020-04-28",
     "links": {
       "github": "https://github.com/justinehell/ghibli-app",
-      "site": "https://justinehell-guibli-guide.netlify.app"
+      "site": null
     }
   },
   {
@@ -141,6 +141,18 @@
     "links": {
       "github": "https://github.com/justinehell/gatsby-sanity-course",
       "site": "https://slick-slices-course.netlify.app"
+    }
+  },
+  {
+    "id": "noe",
+    "type": "team",
+    "name": "NOÉ",
+    "description": "J'ai intégré la start-up NOÉ afin de participer au développement Front-End et à l'amélioration continue d'une application SaaS de suivi de candidatures. Mes missions : intégration des maquettes, implémentation d'ajout/modification/suppression de données. J'ai également réalisé la migration du store Vuex vers Pinia.",
+    "stack": ["VueJS 3", "Pinia", "Quasar"],
+    "startDate": "2022-02-23",
+    "links": {
+      "github": null,
+      "site": "/noe.png"
     }
   }
 ]
