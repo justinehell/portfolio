@@ -93,7 +93,7 @@ export default {
   data() {
     return {
       skills: [
-        'Écosystème VueJS ( Vuex / Pinia / VueRouter / Vuetify / Quasar )',
+        'Écosystème VueJS 2 & 3 ( Vuex / Pinia / VueRouter / Vuetify / Quasar )',
         'HTML / CSS / Javascript (ES6+)',
         'Strapi / Sanity (headless CMS)',
         'Git / Github',
